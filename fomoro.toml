@@ -1,0 +1,4 @@
+name = "musicgenn"
+repo = "https://github.com/llSourcell/musicgen.git"
+description = "generating music"
+environment = "theano"
