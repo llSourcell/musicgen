@@ -55,8 +55,6 @@ def convert_flac_to_wav(filename, sample_frequency):
 def convert_folder_to_wav(directory, sample_rate=44100):
 	for file in os.listdir(directory):
 		fullfilename = directory+file
-		if file.endswith('.mp3'):
-			convert_mp3_to_wav(filename=fullfilename, sample_frequency=sample_rate)
 		if file.endswith('.flac'):
 			convert_flac_to_wav(filename=fullfilename, sample_frequency=sample_rate)
 	return directory + 'wave/'
